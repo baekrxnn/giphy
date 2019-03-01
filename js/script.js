@@ -4,8 +4,12 @@
 /* global $ */
 
 let api_url= "https://api.giphy.com/v1/gifs/search?q=puppy&rating=pg&api_key=dc6zaTOxFJmzC";
+let userInput;
 
 $("#search-button").click(function(){
+  userInput = $("#search-term").val();
+  console.log(userInput);    
+    
   $.ajax({
       url: api_url,
       method: "GET",
@@ -14,6 +18,6 @@ $("#search-button").click(function(){
       }
   });
   
-  
+  $("#search-term").val("");
 });
 
