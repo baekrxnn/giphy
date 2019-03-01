@@ -10,13 +10,13 @@ Make sure to check off your items as you complete them. [ ] => [x]
 ## Day 1
 ### Set-Up
 - [x] Go to the repository at https://github.com/ScriptEdcurriculum/giphy
-- [ ] Fork this repository to your github account and clone it to a new workspace
-- [ ] Review your Starter Code and make sure you understand what code has already been written for you.
+- [x] Fork this repository to your github account and clone it to a new workspace
+- [x] Review your Starter Code and make sure you understand what code has already been written for you.
 - [ ] Add, commit, and push your changes
 - [ ] Make your site live on gh-pages
 
 ### JS
-- [ ] Create  an AJAX function inseide the click handler
+- [x] Create  an AJAX function inseide the click handler
 - [ ] Get the response from using your search URL https://api.giphy.com/v1/gifs/search?q=puppy&rating=pg&api_key=dc6zaTOxFJmzC
 - [ ] Display the original image to the screen
 
