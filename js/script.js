@@ -10,12 +10,13 @@ $("#search-button").click(function(){
   userInput = $("#search-term").val();
   console.log(userInput);    
   api_url = "https://api.giphy.com/v1/gifs/search?q=" + userInput + "&rating=pg&api_key=dc6zaTOxFJmzC";
+  let x = Math.floor(Math.random() * 20);
   
   $.ajax({
       url: api_url,
       method: "GET",
       success: function(response) {
-          $(".gallery").append('<img src="' + response.data[0].images.original.url +'">');
+          $(".gallery").append('<img src="' + response.data[x].images.original.url +'">');
           $(".text-center").text("");
       }
   });
