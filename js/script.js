@@ -3,14 +3,14 @@
 //****************** SERIOUSLY TEST USING console.log()!!! ******************
 /* global $ */
 
-let api_url= "https://api.giphy.com/v1/gifs/search?q=puppy&rating=pg&api_key=dc6zaTOxFJmzC";
+let api_url= "https://api.giphy.com/v1/gifs/search?q=puppy&rating=g&api_key=dc6zaTOxFJmzC";
 let userInput;
 let x;
 
 $("#search-button").click(function(){
   userInput = $("#search-term").val();
   console.log(userInput);    
-  api_url = "https://api.giphy.com/v1/gifs/search?q=" + userInput + "&rating=pg&api_key=dc6zaTOxFJmzC";
+  api_url = "https://api.giphy.com/v1/gifs/search?q=" + userInput + "&rating=g&api_key=dc6zaTOxFJmzC";
   
   $.ajax({
       url: api_url,
