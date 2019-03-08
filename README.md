@@ -12,8 +12,8 @@ Make sure to check off your items as you complete them. [ ] => [x]
 - [x] Go to the repository at https://github.com/ScriptEdcurriculum/giphy
 - [x] Fork this repository to your github account and clone it to a new workspace
 - [x] Review your Starter Code and make sure you understand what code has already been written for you.
-- [ ] Add, commit, and push your changes
-- [ ] Make your site live on gh-pages
+- [x] Add, commit, and push your changes
+- [x] Make your site live on gh-pages
 
 ### JS
 - [x] Create  an AJAX function inseide the click handler
@@ -21,13 +21,13 @@ Make sure to check off your items as you complete them. [ ] => [x]
 - [x] Display the original image to the screen
 
 ### Wrap
-- [ ] Push your changes!
+- [x] Push your changes!
 
 ## Day 2
 ### JS
-- [ ] Take user input from the input box when button is clicked
-- [ ] Update the API request url based on user input
-- [ ] Display the image to the screen 
+- [x] Take user input from the input box when button is clicked
+- [x] Update the API request url based on user input
+- [x] Display the image to the screen 
 
 ### Wrap
 - [ ] Push your changes!
