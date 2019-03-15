@@ -17,8 +17,7 @@ $("#search-button").click(function(){
       method: "GET",
       success: function(response) {
         x = Math.floor(Math.random() * response.data.length);
-        console.log(x);
-        $(".gallery").append('<img src="' + response.data[x].images.original.url +'">');
+        $(".gallery").append('<img class="result" src="' + response.data[x].images.original.url +'">');
         $(".text-center").text("");
       }
   });
@@ -27,3 +26,25 @@ $("#search-button").click(function(){
 });
 
 //$(".gallery").append('<img src="' + response.data[0].images.original.url +'">');
+
+$("#speak_btn").click(function(){
+  var recognition = new window.webkitSpeechRecognition();
+  recognition.onresult = function(event) {
+      var text = event.results[0][0].transcript;
+      console.log(text);
+      
+      api_url = "https://api.giphy.com/v1/gifs/search?q=" + text + "&rating=g&api_key=dc6zaTOxFJmzC";
+  
+      $.ajax({
+          url: api_url,
+          method: "GET",
+          success: function(response) {
+            let x = Math.floor(Math.random() * response.data.length);
+            $(".gallery").append('<img class="result" src="' + response.data[x].images.original.url +'">');
+            $(".text-center").text("");
+          }
+      });
+      
+  };
+  recognition.start();
+});
