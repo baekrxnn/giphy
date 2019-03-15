@@ -17,7 +17,7 @@ $("#search-button").click(function(){
       method: "GET",
       success: function(response) {
         x = Math.floor(Math.random() * response.data.length);
-        $(".gallery").append('<img class="result" src="' + response.data[x].images.original.url +'">');
+        $(".gallery").append('<a target="_blank" href=' + response.data[x].images.original.url + '>' + '<img class="result" src="' + response.data[x].images.original.url +'">' + '</a>');
         $(".text-center").text("");
       }
   });
@@ -40,7 +40,7 @@ $("#speak_btn").click(function(){
           method: "GET",
           success: function(response) {
             let x = Math.floor(Math.random() * response.data.length);
-            $(".gallery").append('<img class="result" src="' + response.data[x].images.original.url +'">');
+            $(".gallery").append('<a target="_blank" href=' + response.data[x].images.original.url + '>' + '<img class="result" src="' + response.data[x].images.original.url +'">' + '</a>');
             $(".text-center").text("");
           }
       });
